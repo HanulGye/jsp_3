@@ -55,19 +55,19 @@
 	<div class="row">
 		    
 	  <ul class="pagination">
-	  	<li><a href="./noticeList.jsp?curPage=<%= 1%>"><span class="glyphicon glyphicon-backward"></span></a></li>
+	  	<li><a href="./boardList.jsp?curPage=<%= 1%>"><span class="glyphicon glyphicon-backward"></span></a></li>
 	  	
 	  	<%if (pager.getCurBlock()>1){ %>
-	  	<li><a href="./noticeList.jsp?curPage=<%= pager.getStartNum()-1%>&kind=<%=pager.getSearch().getKind()%>"><span class="glyphicon glyphicon-chevron-left"></span></a></li>
+	  	<li><a href="./boardList.jsp?curPage=<%= pager.getStartNum()-1%>&kind=<%=pager.getSearch().getKind()%>"><span class="glyphicon glyphicon-chevron-left"></span></a></li>
 	  	<%} %>
 	   	<% for(int i=pager.getStartNum();i<=pager.getLastNum();i++){ %>
-	   		<li><a href="./noticeList.jsp?curPage=<%=i%>"><%=i%></a></li>
+	   		<li><a href="./boardList.jsp?curPage=<%=i%>"><%=i%></a></li>
 	   	<%} %>
 	   	
 	   	<% if(pager.getCurBlock() < pager.getTotalBlock()){ %>
-	   	<li><a href="./noticeList.jsp?curPage=<%=pager.getLastNum()+1%>"><span class="glyphicon glyphicon-chevron-right"></span></a></li>
+	   	<li><a href="./boardList.jsp?curPage=<%=pager.getLastNum()+1%>"><span class="glyphicon glyphicon-chevron-right"></span></a></li>
 	   	<%} %>	
-	   	<li><a href="./noticeList.jsp?curPage=<%=pager.getTotalPage()%>"><span class="glyphicon glyphicon-forward"></span></a></li>
+	   	<li><a href="./boardList.jsp?curPage=<%=pager.getTotalPage()%>"><span class="glyphicon glyphicon-forward"></span></a></li>
 	  </ul>
 	  
   	</div>
