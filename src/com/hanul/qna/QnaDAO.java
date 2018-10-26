@@ -6,6 +6,7 @@ import com.hanul.board.BoardDAO;
 import com.hanul.board.BoardDTO;
 import com.hanul.board.BoardReply;
 import com.hanul.board.BoardReplyDTO;
+import com.hanul.page.RowNumber;
 
 public class QnaDAO implements BoardDAO, BoardReply {
 
@@ -29,7 +30,7 @@ public class QnaDAO implements BoardDAO, BoardReply {
 	}
 
 	@Override
-	public List<BoardDTO> selectList(int startRow, int lastRow, String kind, String search) throws Exception {
+	public List<BoardDTO> selectList(RowNumber rowNumber) throws Exception {
 		// TODO Auto-generated method stub
 		return null;
 	}

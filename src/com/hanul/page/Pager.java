@@ -3,8 +3,15 @@ package com.hanul.page;
 public class Pager {
 	
 	private int totalBlock, curBlock, startNum, lastNum;
+	private int totalPage;
 	private Search search;
 
+	public int getTotalPage() {
+		return totalPage;
+	}
+	public void setTotalPage(int totalPage) {
+		this.totalPage = totalPage;
+	}
 	
 	public int getTotalBlock() {
 		return totalBlock;
